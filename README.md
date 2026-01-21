@@ -9,7 +9,7 @@ This portfolio showcases real analytical workflows, from raw data ingestion all 
 - LinkedIn: (https://www.linkedin.com/in/lee-grover-a33938118/)
 - Email: groverlee1992@gmail.com
   
-🛠 Skills & Tools
+## 🛠 Skills & Tools
 Programming & Analysis
 - Python (Pandas, NumPy, Matplotlib, Seaborn)
 - SQL (PostgreSQL, MySQL, Azure SQL)
@@ -25,7 +25,7 @@ Other Tools
 - Git & GitHub
 - Jupyter Notebook
 
-📊 Featured Projects
+## 📊 Featured Projects
 🏎️ F1 Podium Probability Analysis
 A full end‑to‑end analytics project exploring Formula 1 race results to model the probability of a driver finishing on the podium.
 This project includes:
