@@ -2,7 +2,7 @@
 ### A Professional End‑to‑End Analytics Workflow
 
 ## Overview
-This repository documents a structured analytics process designed to estimate the probability of a Formula 1 driver achieving a podium finish. The work follows a professional methodology used in data analytics teams, covering business understanding, data preparation, exploratory analysis, modelling, and insight generation.
+This repository documents a structured analytics process designed to estimate the probability of a Formula 1 driver achieving a podium finish.
 
 The analysis uses publicly available datasets from Kaggle, combining historical race results (1950–2020) with driver demographic and career information.
 
