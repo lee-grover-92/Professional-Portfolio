@@ -83,26 +83,28 @@ A dashboard (Power BI or Tableau) will present:
 ---
 
 ## Repository Structure
-├── dashboards/
-│   └── (Power BI or Tableau files)
-├── data/
-│   ├── raw/          # Original Kaggle datasets
-│   ├── processed/    # Cleaned and merged datasets
-│
-├── notebooks/
-│   ├── 01_data_preparation.ipynb
-│   ├── 02_eda.ipynb
-│   ├── 03_modelling.ipynb
-│   └── 04_insights.ipynb
-│
-├── src/
-│   ├── data_cleaning.py
-│   ├── feature_engineering.py
-│   ├── modelling.py
-│   └── utils.py
-│
-├── README.md
-└── requirements.txt
+
+- `dashboards/`  
+  - Power BI or Tableau files
+
+- `data/`  
+  - `raw/` — Original Kaggle datasets  
+  - `processed/` — Cleaned and merged datasets
+
+- `notebooks/`  
+  - `01_data_preparation.ipynb`  
+  - `02_eda.ipynb`  
+  - `03_modelling.ipynb`  
+  - `04_insights.ipynb`
+
+- `src/`  
+  - `data_cleaning.py`  
+  - `feature_engineering.py`  
+  - `modelling.py`  
+  - `utils.py`
+
+- `README.md`  
+- `requirements.txt`
 
 ---
 
