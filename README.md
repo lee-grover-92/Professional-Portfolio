@@ -13,11 +13,30 @@ Hi, I'm Lee Grover, a data analyst with experience in transforming raw data into
 ## 📊 Featured Projects
 
 ## 📂 Repository Structure
-
-- `data/` – Raw and cleaned datasets  
-- `notebooks/` – Jupyter notebooks for analysis  
-- `dashboards/` – Power BI / Tableau files  
-- `README.md` – Project documentation
+ 
+- `README.md` – Prortfolio documentation
+- `🏎️ F1 Podium Probability Analysis` - Project #1
+    ├── data/
+    │   ├── raw/                # Original Kaggle datasets
+    │   ├── processed/          # Cleaned and merged datasets
+    │
+    ├── notebooks/
+    │   ├── 01_data_preparation.ipynb
+    │   ├── 02_eda.ipynb
+    │   ├── 03_modelling.ipynb
+    │   └── 04_insights.ipynb
+    │
+    ├── src/
+    │   ├── data_cleaning.py
+    │   ├── feature_engineering.py
+    │   ├── modelling.py
+    │   └── utils.py
+    │
+    ├── dashboard/
+    │   └── (Power BI or Tableau files)
+    │
+    ├── README.md
+    └── requirements.txt
 
 ## 📫 Contact
 
