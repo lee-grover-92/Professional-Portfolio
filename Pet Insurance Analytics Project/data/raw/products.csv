@@ -1,0 +1,28 @@
+product_id,product_name,coverage_type,annual_limit,deductible,monthly_premium
+1,Lifetime Essential,Lifetime,2000,100,28.33
+2,Lifetime Plus,Lifetime,4000,75,87.99
+3,Lifetime Premier,Lifetime,1000,75,57.44
+4,Lifetime Elite,Lifetime,2000,50,89.68
+5,Lifetime Ultra,Lifetime,12000,75,66.43
+6,Lifetime Supreme,Lifetime,8000,100,30.19
+7,Time-Limited Basic,Time-Limited,4000,100,55.34
+8,Time-Limited Standard,Time-Limited,8000,150,71.05
+9,Time-Limited Extra,Time-Limited,12000,100,73.75
+10,Time-Limited Premium,Time-Limited,8000,100,63.53
+11,Max Benefit 1k,Maximum Benefit,1000,150,15.81
+12,Max Benefit 3k,Maximum Benefit,4000,100,15.37
+13,Max Benefit 5k,Maximum Benefit,1000,150,40.58
+14,Max Benefit 7k,Maximum Benefit,2000,50,19.89
+15,Max Benefit 10k,Maximum Benefit,12000,50,32.13
+16,Accident-Only Basic,Accident-Only,4000,150,13.19
+17,Accident-Only Plus,Accident-Only,4000,75,34.85
+18,Accident-Only Elite,Accident-Only,4000,250,84.06
+19,Dental Care Add-on,Add-on,1000,250,80.75
+20,Physiotherapy Add-on,Add-on,1000,100,14.01
+21,Travel Cover Add-on,Add-on,2000,250,61.97
+22,Senior Pet Add-on,Add-on,8000,100,56.45
+23,Puppy/Kitten Booster,Add-on,1000,250,34.94
+24,Rabbit Essential,Small Pet,2000,150,25.41
+25,Rabbit Plus,Small Pet,2000,100,46.08
+26,Small Mammal Basic,Small Pet,12000,50,61.66
+27,Small Mammal Premium,Small Pet,8000,100,57.33
