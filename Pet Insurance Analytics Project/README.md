@@ -85,7 +85,6 @@ pet_data_project/
 │   └── customer_lifetime_value.ipynb
 │
 ├── dashboards/
-│   ├── powerbi/
 │   └── tableau/
 │
 ├── docs/
