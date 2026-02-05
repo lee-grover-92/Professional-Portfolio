@@ -142,4 +142,3 @@ F1_Podium_Probability_Analysis/
 - Strong SQL for analysis, validation, and data engineering  
 - Python for data generation, cleaning, modelling, and automation  
 - Clear analytical storytelling and visualisation  
-- End‑to‑end ownership of real‑world‑style analytics projects
