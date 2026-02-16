@@ -1,0 +1,1763 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='model_dataset' inline='true' name='federated.0qnerwu0ossjql19bdkag1ozufal' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='model_dataset' name='textscan.0trjq320cnxxkz14a5djb04ktem8'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/leebe/Documents/GitHub/Professional-Portfolio/Pet Insurance Analytics Project/tableau/model_dataset.csv' dataRefreshTime='' directory='C:/Users/leebe/Documents/GitHub/Professional-Portfolio/Pet Insurance Analytics Project/tableau' filename='C:/Users/leebe/AppData/Local/Temp/TableauTemp/0h1xpcm0lkimrn1fxftnp086icc9/model_dataset.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0trjq320cnxxkz14a5djb04ktem8' name='model_dataset.csv' table='[model_dataset#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AL10001:no:A1:AL10001:1' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='claim_id' ordinal='0' />
+            <column datatype='date' name='claim_date' ordinal='1' />
+            <column datatype='real' name='claim_amount' ordinal='2' />
+            <column datatype='string' name='status' ordinal='3' />
+            <column datatype='string' name='diagnosis' ordinal='4' />
+            <column datatype='integer' name='policy_id' ordinal='5' />
+            <column datatype='string' name='product_name' ordinal='6' />
+            <column datatype='string' name='coverage_type' ordinal='7' />
+            <column datatype='real' name='monthly_premium' ordinal='8' />
+            <column datatype='integer' name='pet_id' ordinal='9' />
+            <column datatype='string' name='species' ordinal='10' />
+            <column datatype='string' name='breed' ordinal='11' />
+            <column datatype='integer' name='age_at_claim' ordinal='12' />
+            <column datatype='integer' name='customer_id' ordinal='13' />
+            <column datatype='string' name='customer_name' ordinal='14' />
+            <column datatype='string' name='customer_city' ordinal='15' />
+            <column datatype='string' name='customer_country' ordinal='16' />
+            <column datatype='string' name='product_name_clean' ordinal='17' />
+            <column datatype='string' name='full_name' ordinal='18' />
+            <column datatype='string' name='city' ordinal='19' />
+            <column datatype='string' name='country' ordinal='20' />
+            <column datatype='integer' name='pets_owned' ordinal='21' />
+            <column datatype='integer' name='policies_owned' ordinal='22' />
+            <column datatype='integer' name='total_claims' ordinal='23' />
+            <column datatype='real' name='total_claim_amount' ordinal='24' />
+            <column datatype='real' name='total_premiums_paid' ordinal='25' />
+            <column datatype='real' name='loss_ratio' ordinal='26' />
+            <column datatype='integer' name='annual_limit' ordinal='27' />
+            <column datatype='integer' name='deductible' ordinal='28' />
+            <column datatype='real' name='total_vet_cost' ordinal='29' />
+            <column datatype='integer' name='num_treatments' ordinal='30' />
+            <column datatype='integer' name='num_visits' ordinal='31' />
+            <column datatype='string' name='most_common_clinic' ordinal='32' />
+            <column datatype='real' name='severity' ordinal='33' />
+            <column datatype='string' name='age_bucket' ordinal='34' />
+            <column datatype='real' name='breed_avg_severity' ordinal='35' />
+            <column datatype='integer' name='multi_pet' ordinal='36' />
+            <column datatype='real' name='CLV' ordinal='37' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AL10001:no:A1:AL10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>220317</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>claim_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[claim_id]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>claim_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>claim_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[claim_date]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>claim_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>claim_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[claim_amount]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>claim_amount</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diagnosis</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[diagnosis]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>diagnosis</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[policy_id]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>policy_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_name]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>product_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coverage_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[coverage_type]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>coverage_type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>monthly_premium</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[monthly_premium]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>monthly_premium</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pet_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pet_id]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>pet_id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>species</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[species]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>species</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>breed</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[breed]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>breed</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_at_claim</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age_at_claim]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>age_at_claim</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_name]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>customer_name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_city]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>customer_city</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_country]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>customer_country</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name_clean</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_name_clean]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>product_name_clean</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>full_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[full_name]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>full_name</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pets_owned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pets_owned]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>pets_owned</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policies_owned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[policies_owned]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>policies_owned</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_claims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_claims]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>total_claims</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_claim_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_claim_amount]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>total_claim_amount</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_premiums_paid</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_premiums_paid]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>total_premiums_paid</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loss_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loss_ratio]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>loss_ratio</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annual_limit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[annual_limit]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>annual_limit</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deductible</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deductible]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>deductible</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vet_cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_vet_cost]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>total_vet_cost</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_treatments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_treatments]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>num_treatments</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_visits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_visits]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>num_visits</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>most_common_clinic</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[most_common_clinic]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>most_common_clinic</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>severity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[severity]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>severity</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_bucket</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[age_bucket]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>age_bucket</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>breed_avg_severity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[breed_avg_severity]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>breed_avg_severity</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>multi_pet</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[multi_pet]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>multi_pet</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CLV]</local-name>
+            <parent-name>[model_dataset.csv]</parent-name>
+            <remote-alias>CLV</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[CLV]' role='measure' type='quantitative' />
+      <column caption='model_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]' role='measure' type='quantitative' />
+      <column caption='Age At Claim' datatype='integer' name='[age_at_claim]' role='measure' type='quantitative' />
+      <column caption='Age Bucket' datatype='string' name='[age_bucket]' role='dimension' type='nominal' />
+      <column caption='Annual Limit' datatype='integer' name='[annual_limit]' role='measure' type='quantitative' />
+      <column caption='Breed' datatype='string' name='[breed]' role='dimension' type='nominal' />
+      <column caption='Breed Avg Severity' datatype='real' name='[breed_avg_severity]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Claim Amount' datatype='real' name='[claim_amount]' role='measure' type='quantitative' />
+      <column caption='Claim Date' datatype='date' name='[claim_date]' role='dimension' type='ordinal' />
+      <column caption='Claim Id' datatype='integer' name='[claim_id]' role='dimension' type='ordinal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Coverage Type' datatype='string' name='[coverage_type]' role='dimension' type='nominal' />
+      <column caption='Customer City' datatype='string' name='[customer_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Customer Country' datatype='string' name='[customer_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Id' datatype='integer' name='[customer_id]' role='dimension' type='ordinal' />
+      <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+      <column caption='Deductible' datatype='integer' name='[deductible]' role='measure' type='quantitative' />
+      <column caption='Diagnosis' datatype='string' name='[diagnosis]' role='dimension' type='nominal' />
+      <column caption='Full Name' datatype='string' name='[full_name]' role='dimension' type='nominal' />
+      <column caption='Loss Ratio' datatype='real' name='[loss_ratio]' role='measure' type='quantitative' />
+      <column caption='Monthly Premium' datatype='real' name='[monthly_premium]' role='measure' type='quantitative' />
+      <column caption='Most Common Clinic' datatype='string' name='[most_common_clinic]' role='dimension' type='nominal' />
+      <column caption='Multi Pet' datatype='integer' name='[multi_pet]' role='measure' type='quantitative' />
+      <column caption='Num Treatments' datatype='integer' name='[num_treatments]' role='measure' type='quantitative' />
+      <column caption='Num Visits' datatype='integer' name='[num_visits]' role='measure' type='quantitative' />
+      <column caption='Pet Id' datatype='integer' name='[pet_id]' role='dimension' type='ordinal' />
+      <column caption='Pets Owned' datatype='integer' name='[pets_owned]' role='measure' type='quantitative' />
+      <column caption='Policies Owned' datatype='integer' name='[policies_owned]' role='measure' type='quantitative' />
+      <column caption='Policy Id' datatype='integer' name='[policy_id]' role='dimension' type='ordinal' />
+      <column caption='Product Name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+      <column caption='Product Name Clean' datatype='string' name='[product_name_clean]' role='dimension' type='nominal' />
+      <column caption='Severity' datatype='real' name='[severity]' role='measure' type='quantitative' />
+      <column caption='Species' datatype='string' name='[species]' role='dimension' type='nominal' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='Total Claim Amount' datatype='real' name='[total_claim_amount]' role='measure' type='quantitative' />
+      <column caption='Total Claims' datatype='integer' name='[total_claims]' role='measure' type='quantitative' />
+      <column caption='Total Premiums Paid' datatype='real' name='[total_premiums_paid]' role='measure' type='quantitative' />
+      <column caption='Total Vet Cost' datatype='real' name='[total_vet_cost]' role='measure' type='quantitative' />
+      <column-instance column='[CLV]' derivation='Avg' name='[avg:CLV:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[severity]' derivation='Avg' name='[avg:severity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[breed_avg_severity]' derivation='Sum' name='[sum:breed_avg_severity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[claim_amount]' derivation='Sum' name='[sum:claim_amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[multi_pet]' derivation='Sum' name='[sum:multi_pet:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[severity]' derivation='Sum' name='[sum:severity:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/leebe/AppData/Local/Temp/TableauTemp/#TableauTemp_1gagcbr0wfk4eb110cdcm1u7kr6h.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/16/2026 09:15:35 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>claim_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[claim_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>claim_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>194284</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>claim_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[claim_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>claim_date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>8951</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>claim_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[claim_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>claim_amount</remote-alias>
+              <ordinal>2</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>131523</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>3</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>diagnosis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[diagnosis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>diagnosis</remote-alias>
+              <ordinal>4</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policy_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[policy_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policy_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162911</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coverage_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[coverage_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coverage_type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>monthly_premium</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[monthly_premium]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>monthly_premium</remote-alias>
+              <ordinal>8</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pet_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pet_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pet_id</remote-alias>
+              <ordinal>9</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77069</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>species</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[species]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>species</remote-alias>
+              <ordinal>10</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>breed</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[breed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>breed</remote-alias>
+              <ordinal>11</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_at_claim</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age_at_claim]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_at_claim</remote-alias>
+              <ordinal>12</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>13</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69052</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_name</remote-alias>
+              <ordinal>14</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60685</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_city</remote-alias>
+              <ordinal>15</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36840</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_country</remote-alias>
+              <ordinal>16</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>437</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_name_clean</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_name_clean]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_name_clean</remote-alias>
+              <ordinal>17</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>full_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[full_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>full_name</remote-alias>
+              <ordinal>18</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60685</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>19</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36840</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>20</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>437</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pets_owned</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pets_owned]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pets_owned</remote-alias>
+              <ordinal>21</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policies_owned</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[policies_owned]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policies_owned</remote-alias>
+              <ordinal>22</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_claims</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_claims]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_claims</remote-alias>
+              <ordinal>23</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_claim_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_claim_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_claim_amount</remote-alias>
+              <ordinal>24</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69052</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_premiums_paid</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_premiums_paid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_premiums_paid</remote-alias>
+              <ordinal>25</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>63160</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>loss_ratio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[loss_ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>loss_ratio</remote-alias>
+              <ordinal>26</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>annual_limit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[annual_limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>annual_limit</remote-alias>
+              <ordinal>27</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deductible</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[deductible]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deductible</remote-alias>
+              <ordinal>28</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_vet_cost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_vet_cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_vet_cost</remote-alias>
+              <ordinal>29</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>150148</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_treatments</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_treatments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_treatments</remote-alias>
+              <ordinal>30</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_visits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_visits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_visits</remote-alias>
+              <ordinal>31</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>most_common_clinic</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[most_common_clinic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>most_common_clinic</remote-alias>
+              <ordinal>32</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>severity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>severity</remote-alias>
+              <ordinal>33</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>131523</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_bucket</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_bucket]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_bucket</remote-alias>
+              <ordinal>34</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>breed_avg_severity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[breed_avg_severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>breed_avg_severity</remote-alias>
+              <ordinal>35</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>multi_pet</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[multi_pet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>multi_pet</remote-alias>
+              <ordinal>36</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CLV</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CLV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CLV</remote-alias>
+              <ordinal>37</ordinal>
+              <family>model_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69052</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0qnerwu0ossjql19bdkag1ozufal].[avg:CLV:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0qnerwu0ossjql19bdkag1ozufal].[sum:breed_avg_severity:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0qnerwu0ossjql19bdkag1ozufal].[avg:severity:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0qnerwu0ossjql19bdkag1ozufal].[sum:severity:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0qnerwu0ossjql19bdkag1ozufal]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0qnerwu0ossjql19bdkag1ozufal].[sum:claim_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0qnerwu0ossjql19bdkag1ozufal].[sum:multi_pet:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='model_dataset.csv' id='model_dataset.csv_5ACF3FAA8ACB4770B853572AA6EA3076'>
+            <properties context=''>
+              <relation connection='textscan.0trjq320cnxxkz14a5djb04ktem8' name='model_dataset.csv' table='[model_dataset#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:AL10001:no:A1:AL10001:1' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='claim_id' ordinal='0' />
+                  <column datatype='date' name='claim_date' ordinal='1' />
+                  <column datatype='real' name='claim_amount' ordinal='2' />
+                  <column datatype='string' name='status' ordinal='3' />
+                  <column datatype='string' name='diagnosis' ordinal='4' />
+                  <column datatype='integer' name='policy_id' ordinal='5' />
+                  <column datatype='string' name='product_name' ordinal='6' />
+                  <column datatype='string' name='coverage_type' ordinal='7' />
+                  <column datatype='real' name='monthly_premium' ordinal='8' />
+                  <column datatype='integer' name='pet_id' ordinal='9' />
+                  <column datatype='string' name='species' ordinal='10' />
+                  <column datatype='string' name='breed' ordinal='11' />
+                  <column datatype='integer' name='age_at_claim' ordinal='12' />
+                  <column datatype='integer' name='customer_id' ordinal='13' />
+                  <column datatype='string' name='customer_name' ordinal='14' />
+                  <column datatype='string' name='customer_city' ordinal='15' />
+                  <column datatype='string' name='customer_country' ordinal='16' />
+                  <column datatype='string' name='product_name_clean' ordinal='17' />
+                  <column datatype='string' name='full_name' ordinal='18' />
+                  <column datatype='string' name='city' ordinal='19' />
+                  <column datatype='string' name='country' ordinal='20' />
+                  <column datatype='integer' name='pets_owned' ordinal='21' />
+                  <column datatype='integer' name='policies_owned' ordinal='22' />
+                  <column datatype='integer' name='total_claims' ordinal='23' />
+                  <column datatype='real' name='total_claim_amount' ordinal='24' />
+                  <column datatype='real' name='total_premiums_paid' ordinal='25' />
+                  <column datatype='real' name='loss_ratio' ordinal='26' />
+                  <column datatype='integer' name='annual_limit' ordinal='27' />
+                  <column datatype='integer' name='deductible' ordinal='28' />
+                  <column datatype='real' name='total_vet_cost' ordinal='29' />
+                  <column datatype='integer' name='num_treatments' ordinal='30' />
+                  <column datatype='integer' name='num_visits' ordinal='31' />
+                  <column datatype='string' name='most_common_clinic' ordinal='32' />
+                  <column datatype='real' name='severity' ordinal='33' />
+                  <column datatype='string' name='age_bucket' ordinal='34' />
+                  <column datatype='real' name='breed_avg_severity' ordinal='35' />
+                  <column datatype='integer' name='multi_pet' ordinal='36' />
+                  <column datatype='real' name='CLV' ordinal='37' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Avg Claim Sev by Breed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Average Claim Severity by Breed</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='model_dataset' name='federated.0qnerwu0ossjql19bdkag1ozufal' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qnerwu0ossjql19bdkag1ozufal'>
+            <column-instance column='[severity]' derivation='Avg' name='[avg:severity:qk]' pivot='key' type='quantitative' />
+            <column caption='Breed' datatype='string' name='[breed]' role='dimension' type='nominal' />
+            <column-instance column='[breed]' derivation='None' name='[none:breed:nk]' pivot='key' type='nominal' />
+            <column caption='Severity' datatype='real' name='[severity]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0qnerwu0ossjql19bdkag1ozufal].[none:breed:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0qnerwu0ossjql19bdkag1ozufal].[none:breed:nk]</rows>
+        <cols>[federated.0qnerwu0ossjql19bdkag1ozufal].[avg:severity:qk]</cols>
+      </table>
+      <simple-id uuid='{C57FD5AF-1DD4-4817-A669-5E9ADB57CA47}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='model_dataset' name='federated.0qnerwu0ossjql19bdkag1ozufal' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qnerwu0ossjql19bdkag1ozufal'>
+            <column-instance column='[severity]' derivation='Avg' name='[avg:severity:qk]' pivot='key' type='quantitative' />
+            <column caption='Breed' datatype='string' name='[breed]' role='dimension' type='nominal' />
+            <column-instance column='[breed]' derivation='None' name='[none:breed:nk]' pivot='key' type='nominal' />
+            <column caption='Severity' datatype='real' name='[severity]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0qnerwu0ossjql19bdkag1ozufal].[avg:severity:qk]' field-type='quantitative' max='751.0' min='440.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0qnerwu0ossjql19bdkag1ozufal].[none:breed:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0qnerwu0ossjql19bdkag1ozufal].[avg:severity:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0qnerwu0ossjql19bdkag1ozufal].[avg:severity:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qnerwu0ossjql19bdkag1ozufal].[avg:severity:qk]</rows>
+        <cols>[federated.0qnerwu0ossjql19bdkag1ozufal].[none:breed:nk]</cols>
+      </table>
+      <simple-id uuid='{D750DE61-8B04-4254-A3A5-6AF41B7D436A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Avg Claim Sev by Breed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qnerwu0ossjql19bdkag1ozufal].[none:breed:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qnerwu0ossjql19bdkag1ozufal].[none:breed:nk]</field>
+            <field>[federated.0qnerwu0ossjql19bdkag1ozufal].[sum:claim_amount:qk]</field>
+            <field>[federated.0qnerwu0ossjql19bdkag1ozufal].[yr:claim_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F3AB99BE-815A-47AF-888B-5643B23552CB}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qnerwu0ossjql19bdkag1ozufal].[none:breed:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EB45C294-5EF6-4BAC-9E8A-6C62A0CC630B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Avg Claim Sev by Breed' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAMH0lEQVR4nO3d2Xcb5RkG8OebRRqNdsuObeQ0HA6UlgIl0J4TSqFpIRtxKPSq/1/vetsb
+      2nPKlsVJCJBQSkLt2o43eZFlWZKl0ay9ICRprISMYy3j7/ld2T4+1neO59G3zDuvRBAEAYgk
+      pfR7AET9xACQ1BgAkhoDQFJjAEhq+xYAHiZRFO1bAHzf368/RdQzXAKR1BgAkhoDQFJjAEhq
+      DABJTQvzy0EQIAgCCCH+7+cPfk8UFaECsFPfxvTcIp59+ikslLZgaD7iZhbF8UMAeC+AoidU
+      AJJJE8OFYZRWSmg0bGTHD8F32wiCAL7vMwAUOSLM8wCebcHXDOhKAMtqw2o2EDMzMI0YPM+D
+      qqrdHCvRvgsVgEdhACiKeApEUmMASGoMAEmNASCpMQAkNQaApMYAkNQYAJIaA0BSYwBIaqGK
+      4RrbW1jb3MZQLgXHVwCnhXg6j2zK7Nb4iLoqXDVoJgd9uw7TiKO0WUNMU9De2kTaNFgNSpEU
+      KgBeu4FkdhgLi3NIpIfhWA3EzCwURUEQBCyGo8hhNShJjZtgkhoDQFJjAEhqDABJjQEgqTEA
+      JDUGgKTGAJDUGACSWqhSCKK9KpfLmJu/DUUIvPzyS9B1vd9DAhAyAL7vwfcDKMqdiSMIIBSF
+      zXHpR+m6jmQqBW3ArpdQtUA79W3MzC1iKJuEE6iA10YskUZxfBS+798LBlFEhJoBTNPAUGEY
+      8B2ongclZsB37bvNcYmiJlxzXKeNQI3DbtbhQUXgWtATaSTiOqtBKZJYDv0ElpaWcP7CRQgB
+      nDl9Gtlstt9DopAYgCfkuB4URUDl/ieSeAz6hHRNvtAfJNIHYHl5GZ+dvwAhgNOnTiGXy/V7
+      SNRDXAIBcD0fQoDLGAl1fQao1Wq4des7QAi88POfIZVKdfslQ9PU6F/4nueh3bYhBBCPx3lP
+      5jF1PQCapiGXz9/9mrqjVCrh8tXPoSkKTpx4B8lkst9DigQugUhqnCdJalyT0GObnZ3F1c8/
+      hyIEJicnYZrRb4nJJVCP+H4AITBQlZB70XZcaKpyYE7MwpVDew7KlRrSZgwuNPh2E0Yqh7je
+      3wu/Wq3i5q3vIITASy/+YuA2gIuLi/j0/AWoioKz755BJpPp95D2LK7/+CVz/0xx7tw5JBKJ
+      Hoxsb0LNAHPTN6GYebjNKuxAu9MUN8DERBGe5/Xt3a3ZbKK0ugoBYGJiArFYrC/joHtsx4Om
+      KVAGfMYLNQMkzBSq9TpUVUAVAu3WDjQj3ffmuJlMJtLvqgdRVI68Q80AQRAgCIJ77/RBACgK
+      BMLtAVZXV/HRJ59CADh54h0UCoU9DJ3oyfVtE+zdeYDmoGymKJr6Nk91uvD9O1ns1rrRdV20
+      220AQCKReGi5gOu6qO80oQgF6ZTJsoIDbGAWaqVSCR99/CmEAE6dPNGVZVG5XMaly1egCIHf
+      H//dQx9gKZfLuHbtGgDgrbfe4v6ih9bX1zE7Nw9FCBw9+krXu0fwPgANlFqthtLqOjRNwdNH
+      jnT9mmIASGpc3JLUGACS2sBsgonCcBwHVrsNIQSSprnnKgQGgCJpeXkZX3x1AzFdxamTJ/dc
+      /sJNMEmNewCSWqglUHVzA00X0AIbSiyJZq2CeDKH0ZGhbo2PqKtCBWBrqwLbU+F5FuJxG0bC
+      gN1qwPdz8H0f+7SaIuqZUHuAVmMbG9tNZBI62h4gvDZ0M4d8Jsk9AEUSN8EkNW6CSWoMQB/5
+      dx4wov7hjbA+WVhYwGfnL0JVo/+gfJRxD0BS4xJIQh6PrO/iEkgy8/PzuHBpCpqq4Nzk5MD1
+      UOo1LoFIalwC0RPz/eieZnEJRE9kdnYWF6euQNcU/PG99wa6DWInXAIR5ubmcOXKVQhFYPLs
+      Wan2BeE+KNu1sblVw8jwEOqNJnzHgpHKwYhpDEDE2Y73fctLyXoghWyOewsikUVS87FZs5BK
+      xuF7/W+OK5vFxUVcmroCVRU4c/q0VO/Y+y1UANZWFrFVs2AYCsqVBvIZA1o8gyOHxzkD9Jjn
+      +RCKGPjuy4MufHNc3GtdGPj+nprjEg2KUKdAQgjc/34jJFsv0sHDK5ikxgCQ1BgAkhoDQFJj
+      AEhqDABJjQEgqTEAJDWWQw8Q27axs9OEEEA6nead9R7gDDBANjc3ceHSFKamLsOyrH4PRwqh
+      aoGqm+tougIJDai3bAR3yqFHRwqsBaJICtcct7IF21cQK2QQjxtwFQG7tQPfz7M5LkVSuOa4
+      OzWUt5tQPQu+ZiIuXOjJLHJpNselaOIjkSS1jksg1/Wgqkqkn/CqVCq4/vW/oAiBX732KlKp
+      VL+HRAOoYwC+uTWNldUNnHn7t5ENgWmaeP65ZwFgzx+gRgffrmPQL258i7/89W9wXRctq92P
+      Me0LwzBQLBZRLBYZAHqoXTNAIhHH8Td+jXOnjvdhOPSg27dv47Pzl6BpCibPvot0Ot3vIR0o
+      3ARHQBAAEEA0F6P9NT09jakr1xDTVfzpg/d3rQY6BmBl6TaMdAFD2cffODIANKh8P4AQ6Lif
+      7VgK4bbq+PuHH+LGt//Z04v5vCFGA0RRxEMPc3btAYLAxdc3ZzGRz+OZ538a6oXW1tbwz48+
+      BiBw8sTbGB4e3tOAH+X+483XXj3KNbEEZmZmcOnyVcR0FR+8/z7i8fi+/e1dSyC7sYl/fHIZ
+      AWI4PXkC+mP+oV4tgSzLwuZmBRDAyPBwz054bNvGdq0GIQRy2Sw0jYW0vfTDZbrfx/K7/oux
+      VAFjQxkMH34Wg7ii//5486mev261WsWXX12HEAJv/OZ1KW6sPWrt3GvdGkPHTfDszeuYWanj
+      9394E/p9r+s5bZSrdaQNHTY0BHYTRiqHRFznJviAmZubw8Wpy9BUBe+dOwfTNPs9pK7oOI9v
+      VLax8t9pWMffhH7fNb0wPweRyMJpW/A9D4qmobGziuJEkdWgB8zhw4fx58OH737vum4fR9M9
+      HQMwPj4KNVGA+cAZUTKVwlZtB0FcRRAIoNWAZmSgKAqCIOAMQJHTMQBO28LKyipe/OWLuP+a
+      HhkrYmTsgV8egPUh0V51DMDaRgXbq8toAzDu+/kgbIaI9tOuANiNCkbHxlC1dBi83kNrt9vY
+      qm5DUQSG8nkelz7CysoKZmZmAADHjh3rS9Hirv+OgIdvvlvCC88dgdfz4URftVrF13du1L3+
+      +jEG4BFyuRx+8vQz0DW1b/vHhxbDObYNNRZ77LYRPAalKOp4fdeqFfz7xg1st6L7PADR4+gY
+      gK++/ALTC4v49sb1Xo+HqKc63wcYyaFuazj6yiu9Hg9RT3WcAYxkBsmYAkXfv6o7okG0awZo
+      18uYuV3CRrkK7mnpoNsVAM1IYbSQg9Vy+jEeop7iM8EktVB3adZXV+BAA5wmnEADPAtGMoex
+      Q/v/5BdRL4QKQDymY32tAlMXcAIPqaQJx2rC932WQ1MkhQqAqunIZrNIxhS40CC8NmLpYZZD
+      U2RxD0BS4yfEkNQYAJIaA0BSYwBIagwASY0BIKkxACQ1BoCkxgCQ1BgAklqoWiCr2cBWvYVc
+      ykDTDiA8C0YqB9Pgh9BRNIWqBVpamIWnJNDaLiNbGIXvOfA9H8WJIjzPY+c4ipxQM0A2m8di
+      aQPpdBqtVgvw29DZHJciLNQM0PFXhYAAq0EpmkLNAFzi0EHDUyCSGgNAUmMASGoMAEmNASCp
+      MQAkNQaApMYAkNQYAJIaA0BSC9cct7QMR+gopGK4XdpCXPUQT+YwPsrmuBRN4ZrjGnGslcqo
+      blhoWD4mimNw2myOS9EVrjmuqiGfz2Ni/BB2Gk20mjXEMiMsh6bIYnNckho3wSQ1BoCkxgCQ
+      1BgAkhoDQFJjAEhqDABJjQEgqTEAJDUGgKQWqhaotVNHtWEhndBh+woCpwUjlUMyEe/W+Ii6
+      KlQAKptlOCKOfDqBjfUKYjEVzY11JCaKrAalSAoVgEw2h6XVMuZrGzBzo7BbNeiJLKtBKbL2
+      1Bz3hx6hQRCwOS5F2hM1x2WzXIo6ngKR1BgAkhoDQFJjAEhqDABJjQEgqTEAJDUGgKTGAJDU
+      GACSWqhSiLXSElwRg3CaaAca4LRgJHMYHxvp1viIuipUABKGgfmVMoayKai+BzVhwrFbbI5L
+      kRW6OW6hMIS0ocGFisBpIZYtsByaIovNcUlq/wMBfNK+To9LwwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
