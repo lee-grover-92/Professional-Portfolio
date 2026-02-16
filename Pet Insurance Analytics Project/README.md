@@ -6,15 +6,15 @@ This project simulates the operations of a UK-based pet insurance company, model
 
 ---
 
-## 🎯 Project Objectives  
-- Design a normalized relational schema for a pet insurance business  
-- Generate realistic synthetic data using Python  
-- Load and validate data in a MySQL environment  
-- Write analytical SQL queries to extract business insights  
-- Create processed, analysis-ready datasets  
-- Explore data in Python (Pandas, Seaborn)  
-- Build dashboards in Power BI or Tableau  
-- Present findings in a clear, recruiter-friendly format  
+## 🔍 Key Business Questions  
+This dataset enables analysis of real-world insurance KPIs and customer behaviour:
+
+- Which pet breeds generate the highest average claim costs?  
+- How does pet age affect policy risk and claim frequency?  
+- What is the loss ratio by product and coverage type?  
+- What is the average customer lifetime value (CLV)?  
+- Which vet clinics are most expensive or most visited?  
+- How many customers own multiple pets or policies?  
 
 ---
 
@@ -40,20 +40,6 @@ The schema models the core entities of a pet insurance provider:
 | `vet_visits` | Vet appointments linked to claims |
 | `invoice_line_items` | Itemized treatment costs per visit |
 | `claim_payments` | Payments issued for approved claims |
-
----
-
-## 🔍 Key Business Questions  
-This dataset enables analysis of real-world insurance KPIs and customer behaviour:
-
-- Which pet breeds generate the highest average claim costs?  
-- How does pet age affect policy risk and claim frequency?  
-- What is the loss ratio by product and coverage type?  
-- What is the average customer lifetime value (CLV)?  
-- Which vet clinics are most expensive or most visited?  
-- What is the claim approval rate by diagnosis?  
-- How many customers own multiple pets or policies?  
-- What is the average time from claim to payment?
 
 ---
 
@@ -85,15 +71,16 @@ pet_data_project/
 │   └── customer_lifetime_value.ipynb
 │
 ├── dashboards/
-│   └── tableau/
+│   ├── tableau/
+|   └── images/                         # Screenshots of dashboard
 │
 ├── docs/
 │   ├── schema_diagram.png
 │   ├── data_dictionary.md
 │   └── project_overview.pdf
 │
-└── images/
-    └── dashboard_screenshots/
+└── images/                             # Saved PNG images of python graphs
+    
 ```
 
 ---
