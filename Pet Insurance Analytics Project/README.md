@@ -16,8 +16,8 @@ This dataset enables analysis of real-world insurance KPIs and customer behaviou
 - Which vet clinics are most expensive or most visited?  
 - How many customers own multiple pets or policies?  
 
-Insight findings are available **[here](./notebooks/claims_risk_modelling.ipynb/)**
-Dashboard views can be found **[here](./tableau/pet_analysis_dashboard.twb)** or at (TABLEAU PUB LINK)
+###### Insight findings are available **[here](./notebooks/claims_risk_modelling.ipynb/)**
+###### Dashboard views can be found **[here](./tableau/pet_analysis_dashboard.twb)** or at (TABLEAU PUB LINK)
 
 ---
 
