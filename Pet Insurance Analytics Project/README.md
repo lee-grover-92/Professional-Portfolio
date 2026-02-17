@@ -17,8 +17,7 @@ This dataset enables analysis of real-world insurance KPIs and customer behaviou
 - How many customers own multiple pets or policies?  
 
 ###### Insight findings are available **[here](./notebooks/claims_risk_modelling.ipynb/)**
-###### Dashboard views can be found **[here](./tableau/pet_analysis_dashboard.twb)** or at (TABLEAU PUB LINK)
-
+###### Dashboard views can be found **[here](./tableau/pet_analysis_dashboard.twbx)** or at **[Tableau Public](https://public.tableau.com/views/pet_analysis_dashboard/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 ---
 
 ## 🛠️ Tech Stack  
